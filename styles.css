@@ -1,0 +1,233 @@
+/* Montessori-inspired CSS for site design */
+
+/* Color palette inspired by natural Montessori materials */
+:root {
+  --warm-beige: #f7f3e9;
+  --soft-brown: #8b6f47;
+  --natural-wood: #a0845c;
+  --gentle-green: #7d9471;
+  --calm-blue: #6b8caf;
+  --warm-red: #c17767;
+  --text-dark: #3d3d3d;
+  --text-light: #666666;
+}
+
+/* Base styles with natural, calming feel */
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: var(--warm-beige);
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headers with gentle hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--soft-brown);
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2em;
+  border-bottom: 3px solid var(--natural-wood);
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: var(--gentle-green);
+}
+
+h3 {
+  font-size: 1.4em;
+  color: var(--calm-blue);
+}
+
+/* Natural, accessible links */
+a {
+  color: var(--calm-blue);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--warm-red);
+}
+
+/* Container with natural spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card-like sections mimicking Montessori material boxes */
+.section {
+  background: white;
+  border: 2px solid var(--natural-wood);
+  border-radius: 8px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Buttons with natural, tactile feel */
+.btn {
+  background-color: var(--natural-wood);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: var(--soft-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background-color: var(--gentle-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--calm-blue);
+}
+
+/* Navigation with natural flow */
+nav {
+  background-color: var(--soft-brown);
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: var(--warm-beige);
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--warm-red);
+}
+
+/* Forms with natural, approachable styling */
+input, textarea, select {
+  border: 2px solid var(--natural-wood);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--gentle-green);
+  box-shadow: 0 0 5px rgba(125, 148, 113, 0.3);
+}
+
+/* Lists with natural spacing */
+ul, ol {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Tables with clean, natural borders */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid var(--natural-wood);
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--warm-beige);
+  color: var(--soft-brown);
+  font-weight: bold;
+}
+
+/* Responsive design for child-friendly accessibility */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Special classes for Montessori-style learning sections */
+.learning-area {
+  background: linear-gradient(135deg, var(--warm-beige) 0%, white 100%);
+  border-left: 5px solid var(--gentle-green);
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.activity-card {
+  background: white;
+  border: 2px solid var(--calm-blue);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  min-width: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Age-appropriate font sizes and spacing */
+.large-text {
+  font-size: 1.3em;
+  line-height: 1.8;
+}
+
+.emphasis {
+  background-color: var(--warm-red);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
